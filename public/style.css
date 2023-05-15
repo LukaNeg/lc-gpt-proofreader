@@ -1,0 +1,72 @@
+.current-document ins {
+  background: lightgreen;
+  text-decoration: none;
+}
+.current-document del {
+  background: pink;
+}
+.system-generated del {
+  visibility: hidden;
+}
+.system-generated ins {
+  text-decoration: none;
+}
+.system-generated ins ~ del {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  height: 400px;
+  overflow: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  width: 48%;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0 20px; /* Added margin to the bottom */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#loadingIndicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.downloadBtn-container {
+  display: flex;
+  justify-content: flex-end;
+}

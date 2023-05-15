@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Text Correction</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Enter your text</h1>
+    <form id="textForm">
+      <textarea name="inputText" id="inputText" required></textarea>
+      <p>Note that there is a limit of 1400 words for the text input. If your text exceeds this limit, it will be automatically trimmed.
+        <br>
+        It may take a few minutes for the text to be processed, especially if it is long. Please be patient.
+      </p>
+      <button type="submit">Submit</button>
+      <div id="loadingIndicator"></div>
+    </form>
+    <div id="outputText"></div>
+    <b><div id="outputAdvice"></div></b>
+    <br>
+    <div class="downloadBtn-container">
+      <button id="downloadBtn">Download Corrected Text</button>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h4>Document with changes</h4>
+        <div class="card current-document" id="inputDiff"></div>
+      </div>
+      <div class="col">
+        <h4>Corrected Document</h4>
+        <div class="card system-generated" id="outputClean"></div>
+      </div>
+    </div>
+
+    <script src="htmldiff.js"></script>
+    <script src="sendPrompt.js"></script>
+  </body>
+</html>

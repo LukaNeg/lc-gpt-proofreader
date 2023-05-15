@@ -1,0 +1,20 @@
+{
+  "name": "lc-gpt-proofreader",
+  "version": "1.0.0",
+  "description": "app to proofread text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luka Negoita",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "diff": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "langchain": "^0.0.72",
+    "node": "^20.1.0"
+  }
+}
